@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Serialization;
 
+
 public class Score : MonoBehaviour
 {   [Header("Активный Счёт")]
     public int score;
@@ -17,7 +18,10 @@ public class Score : MonoBehaviour
     {
         StartCoroutine(Bonus());
     }
-
+    public void Update()
+    {
+        scoreText2.text = score.ToString(CultureInfo.InvariantCulture);
+    }
     IEnumerator Bonus()
     {
         do

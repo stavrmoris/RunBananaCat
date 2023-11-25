@@ -32,7 +32,7 @@ public class SpawnObject : MonoBehaviour
             }
             else {
                 obj = objPlatforma;
-                PosY = -3; 
+                PosY = -3.15f; 
             }
             Pos = new Vector3(PosX,PosY,0);
             Instantiate(obj, Pos, Quaternion.identity);

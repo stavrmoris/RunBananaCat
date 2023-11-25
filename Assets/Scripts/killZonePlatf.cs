@@ -16,6 +16,7 @@ public class killZonePlatf : MonoBehaviour
             Destroy(Obj);
             canvasDead.SetActive (true);
             CanvasHud.SetActive (false);
+            Time.timeScale = 0;
         }
     }
 
