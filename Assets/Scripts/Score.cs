@@ -18,10 +18,12 @@ public class Score : MonoBehaviour
     {
         StartCoroutine(Bonus());
     }
-    public void Update()
+    void Update()
     {
         scoreText2.text = score.ToString(CultureInfo.InvariantCulture);
+        PlayerPrefs.SetFloat("Счёт", score);
     }
+    
     IEnumerator Bonus()
     {
         do

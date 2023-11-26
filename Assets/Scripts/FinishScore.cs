@@ -9,18 +9,12 @@ using UnityEngine.Serialization;
 
 public class FinishScore : MonoBehaviour
 {
-    public float Score;
+    public float score;
     public TextMeshProUGUI ScoreText;
-    void Start()
+
+    void Update()
     {
-        
-
-    }
-
-
-    void FixedUpdate()
-    {
-        Score = PlayerPrefs.GetFloat("Счёт");
-        ScoreText.text = Score.ToString(CultureInfo.InvariantCulture);
+        score = PlayerPrefs.GetFloat("Счёт");
+        ScoreText.text = score.ToString(CultureInfo.InvariantCulture);
     }
 }
