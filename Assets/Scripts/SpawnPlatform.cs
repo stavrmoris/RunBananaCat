@@ -16,16 +16,16 @@ public class SpawnPlatform : MonoBehaviour
 
     public void SpawnOnePlatfofm()
     {
-        PosX = Random.Range(15, 18);
-        Pos = new Vector2(PosX,-1);
+        PosX = Random.Range(15.92f, 18.07f);
+        Pos = new Vector2(PosX, -2.41f);
         Instantiate(obj, Pos, Quaternion.identity);
         SpawnTwoPlatfofm();
     }
 
     public void SpawnTwoPlatfofm()
     {
-        PosX = Random.Range(19, 25);
-        Pos = new Vector2(PosX,-1);
+        PosX = Random.Range(22.56f, 24.97f);
+        Pos = new Vector2(PosX,-2.41f);
         Instantiate(obj, Pos, Quaternion.identity);
     }
 

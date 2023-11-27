@@ -28,11 +28,11 @@ public class SpawnObject : MonoBehaviour
             RandomTime = Random.Range(3f, 5f);
             if (Random.value < 0.5f) { 
                 obj = objCactus;
-                PosY = -4.35f;
+                PosY = -4.46f;
             }
             else {
                 obj = objPlatforma;
-                PosY = -4.8f; 
+                PosY = -4.43f; 
             }
             Pos = new Vector3(PosX,PosY,0);
             Instantiate(obj, Pos, Quaternion.identity);
