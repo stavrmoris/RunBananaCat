@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,22 +19,30 @@ public class Move : MonoBehaviour
 
     private void Update() 
     {
-        if(Input.GetKeyDown(KeyCode.Space) && CanJump==true)
+        if(Input.GetKeyDown(KeyCode.Space) && CanJump)
         {
             rb.velocity = new Vector2(rb.velocity.x, ForceJump);
+        }
+
+        foreach (Touch touch in Input.touches) {
+            if (touch.fingerId == 0) {
+                if (Input.GetTouch(0).phase == TouchPhase.Began && CanJump) {
+                    rb.velocity = new Vector2(rb.velocity.x, ForceJump);
+                }
+            }
         }
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if(col.gameObject.tag == "Ground")
+        if(col.gameObject.CompareTag("Ground"))
         {
             CanJump = true;
         }
     }
     void OnCollisionExit2D(Collision2D col)
     {
-        if(col.gameObject.tag == "Ground")
+        if(string.Equals(col.gameObject.tag, "Ground", StringComparison.Ordinal))
         {
             CanJump = false;
         }

@@ -329,7 +329,7 @@ GameObject:
   - component: {fileID: 4360276182929980602}
   - component: {fileID: 9216227996325871780}
   - component: {fileID: 6353431813022207425}
-  - component: {fileID: 6100161219776672028}
+  - component: {fileID: 7120000485545257485}
   m_Layer: 0
   m_Name: water and Platform 1 1 1 1 1 1
   m_TagString: Untagged
@@ -384,7 +384,7 @@ MonoBehaviour:
   PosX: 0
   Pos: {x: 0, y: 0}
   obj: {fileID: 6176563881764724587, guid: 1cf0f58ac4e85bc489856ea7f8fc49a6, type: 3}
---- !u!95 &6100161219776672028
+--- !u!95 &7120000485545257485
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -394,7 +394,7 @@ Animator:
   m_GameObject: {fileID: 2724285547951792569}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2926b263b10f28a4592b2b1e0bd9527d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8886a826f23cf6b4a896596d94988a65, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
