@@ -20,7 +20,7 @@ public class Score : MonoBehaviour
     }
     void Update()
     {
-        scoreText2.text = score.ToString(CultureInfo.InvariantCulture);
+        scoreText2.text = $"Ваш счёт: {score.ToString(CultureInfo.InvariantCulture)}";
         PlayerPrefs.SetFloat("Счёт", score);
     }
     

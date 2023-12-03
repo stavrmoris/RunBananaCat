@@ -34,7 +34,7 @@ public class SpawnObject : MonoBehaviour
                 obj = objPlatforma;
                 PosY = -4.5f; 
             }
-            Pos = new Vector3(PosX,PosY,0);
+            Pos = new Vector3(31f,PosY,0);
             Instantiate(obj, Pos, Quaternion.identity);
             yield return new WaitForSeconds(RandomTime);
         }
